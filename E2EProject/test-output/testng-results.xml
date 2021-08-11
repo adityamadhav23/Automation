@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2021-08-11T22:58:56 IST" name="Default suite" finished-at="2021-08-11T22:59:00 IST" duration-ms="4843">
+    <groups>
+    </groups>
+    <test started-at="2021-08-11T22:58:56 IST" name="Default test" finished-at="2021-08-11T22:59:00 IST" duration-ms="4843">
+      <class name="Automation.HomePage">
+        <test-method signature="basePageNavigation()[pri:0, instance:Automation.HomePage@3e84448c]" started-at="2021-08-11T22:58:56 IST" name="basePageNavigation" finished-at="2021-08-11T22:59:00 IST" duration-ms="4796" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- basePageNavigation -->
+      </class> <!-- Automation.HomePage -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
