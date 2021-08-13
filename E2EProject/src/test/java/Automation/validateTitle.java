@@ -17,7 +17,7 @@ public void basePageNavigation() throws IOException{
 	driver.get(properties.getProperty("url"));
 	
 	LandingPage l=new LandingPage(driver);
-	org.testng.Assert.assertEquals(l.getTitle().getText(), "Featured Courses");
+	org.testng.Assert.assertEquals(l.getTitle().getText(), "FEATURED COURSES");
 	
 }
 }

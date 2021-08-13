@@ -31,17 +31,17 @@ public void basePageNavigation(String Username, String Passsowrd, String text) t
 public Object[][] getData() {
 	//row>>different data types test should run
 	//column>>how many values per test
-	Object[][] data=new Object[2][2];
+	Object[][] data=new Object[2][3];
 	
 	//1st data set
 	data[0][0]="adi@test.com"; //getEmail
 	data[0][1]="adi";	//getPassword
-	//data[0][2]="Restricted User";
+	data[0][2]="Restricted User";
 	
 	//2nd data set
 	data[1][0]="aditya@test.com"; //getEmail
 	data[1][1]="aditya";	//getPassword
-	//data[1][2]="Restricted User";
+	data[1][2]="Restricted User";
 	
 	return data;
 }
