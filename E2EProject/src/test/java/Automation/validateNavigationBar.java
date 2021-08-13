@@ -13,7 +13,7 @@ public class validateNavigationBar extends base{
 @Test
 public void basePageNavigation() throws IOException{
 	driver=initalizeDriver();
-	driver.get("http://www.qaclickacademy.com/");
+	driver.get(properties.getProperty("url"));
 	
 	LandingPage l=new LandingPage(driver);
 	Assert.assertTrue(l.getNaigationBar().isDisplayed());
