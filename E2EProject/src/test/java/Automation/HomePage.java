@@ -3,6 +3,7 @@ package Automation;
 
 import java.io.IOException;
 
+import org.testng.annotations.AfterTest;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
@@ -44,6 +45,10 @@ public Object[][] getData() {
 	data[1][2]="Restricted User";
 	
 	return data;
+}
+@AfterTest
+public void teardown() {
+	driver.close();
 }
 }
 

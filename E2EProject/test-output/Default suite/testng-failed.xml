@@ -3,11 +3,12 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Automation.validateTitle">
+      <class name="Automation.HomePage">
         <methods>
-          <include name="basePageNavigation"/>
+          <include name="initialize"/>
+          <include name="basePageNavigation" invocation-numbers="1"/>
         </methods>
-      </class> <!-- Automation.validateTitle -->
+      </class> <!-- Automation.HomePage -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
