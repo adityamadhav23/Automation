@@ -104,17 +104,17 @@
                     <div class="method-list-content passed suite-Suite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="Automation.validateNavigationBar" class="method navigator-link" hash-for-method="basePageNavigation">basePageNavigation</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Suite" title="Automation.HomePage" class="method navigator-link" hash-for-method="basePageNavigation(aditya@test.com, aditya, Restricted User)">basePageNavigation(aditya@test.com, aditya, Restricted User)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Suite" title="Automation.HomePage" class="method navigator-link" hash-for-method="basePageNavigation(adi@test.com, adi, Restricted User)">basePageNavigation(adi@test.com, adi, Restricted User)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="Automation.validateNavigationBar" class="method navigator-link" hash-for-method="basePageNavigation">basePageNavigation</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -197,23 +197,23 @@
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
-&lt;suite name=&quot;Suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
-  &lt;test thread-count=&quot;5&quot; name=&quot;Validating Navigation Bar&quot;&gt;
+&lt;suite parallel=&quot;tests&quot; name=&quot;Suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; parallel=&quot;tests&quot; name=&quot;Validating Navigation Bar&quot;&gt;
     &lt;classes&gt;
       &lt;class name=&quot;Automation.validateNavigationBar&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Validating Navigation Bar --&gt;
-  &lt;test thread-count=&quot;5&quot; name=&quot;AppTest&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; parallel=&quot;tests&quot; name=&quot;AppTest&quot;&gt;
     &lt;classes&gt;
       &lt;class name=&quot;Automation.AppTest&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- AppTest --&gt;
-  &lt;test thread-count=&quot;5&quot; name=&quot;Validating UserLogin&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; parallel=&quot;tests&quot; name=&quot;Validating UserLogin&quot;&gt;
     &lt;classes&gt;
       &lt;class name=&quot;Automation.HomePage&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Validating UserLogin --&gt;
-  &lt;test thread-count=&quot;5&quot; name=&quot;Validating Title of the page&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; parallel=&quot;tests&quot; name=&quot;Validating Title of the page&quot;&gt;
     &lt;classes&gt;
       &lt;class name=&quot;Automation.validateTitle&quot;/&gt;
     &lt;/classes&gt;
@@ -268,24 +268,24 @@ data.addRows(4);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'basePageNavigation')
 data.setCell(0, 2, 'Automation.HomePage')
-data.setCell(0, 3, 9876);
+data.setCell(0, 3, 7152);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'basePageNavigation')
 data.setCell(1, 2, 'Automation.HomePage')
-data.setCell(1, 3, 8534);
+data.setCell(1, 3, 5535);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'basePageNavigation')
 data.setCell(2, 2, 'Automation.validateTitle')
-data.setCell(2, 3, 5827);
+data.setCell(2, 3, 5266);
 data.setCell(3, 0, 3)
 data.setCell(3, 1, 'basePageNavigation')
 data.setCell(3, 2, 'Automation.validateNavigationBar')
-data.setCell(3, 3, 47);
+data.setCell(3, 3, 85);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 24 seconds</span>
+              <span class="suite-total-time">Total running time: 18 seconds</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -316,43 +316,52 @@ return data;
                 <span class="method-name">initialize</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-test before -->
-              <div class="test-method">
-                <span class="method-name">basePageNavigation</span>
-                <span class="method-start">8965 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-test after">
-                <span class="method-name">teardown</span>
-                <span class="method-start">9016 ms</span>
-              </div> <!-- configuration-test after -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">Automation.HomePage</div> <!-- chronological-class-name -->
-              <div class="test-method">
-                <span class="method-name">basePageNavigation(adi@test.com, adi, Restricted User)</span>
-                <span class="method-start">9099 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">basePageNavigation(aditya@test.com, aditya, Restricted User)</span>
-                <span class="method-start">17634 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-test after">
-                <span class="method-name">teardown</span>
-                <span class="method-start">27511 ms</span>
-              </div> <!-- configuration-test after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">Automation.validateTitle</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">initialize</span>
-                <span class="method-start">27553 ms</span>
+                <span class="method-start">1 ms</span>
               </div> <!-- configuration-test before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">Automation.HomePage</div> <!-- chronological-class-name -->
               <div class="test-method">
-                <span class="method-name">basePageNavigation</span>
-                <span class="method-start">36557 ms</span>
+                <span class="method-name">basePageNavigation(adi@test.com, adi, Restricted User)</span>
+                <span class="method-start">28 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">basePageNavigation(aditya@test.com, aditya, Restricted User)</span>
+                <span class="method-start">7182 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-test after">
                 <span class="method-name">teardown</span>
-                <span class="method-start">42385 ms</span>
+                <span class="method-start">12721 ms</span>
+              </div> <!-- configuration-test after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">Automation.validateTitle</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">basePageNavigation</span>
+                <span class="method-start">13372 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">Automation.validateNavigationBar</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">basePageNavigation</span>
+                <span class="method-start">15267 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-test after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">15353 ms</span>
+              </div> <!-- configuration-test after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">Automation.validateTitle</div> <!-- chronological-class-name -->
+              <div class="configuration-test after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">18639 ms</span>
               </div> <!-- configuration-test after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
