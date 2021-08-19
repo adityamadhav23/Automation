@@ -3,6 +3,9 @@ package Automation;
 
 import java.io.IOException;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+import org.openqa.selenium.WebDriver;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
@@ -12,7 +15,8 @@ import pageObjects.LoginPage;
 import resources.base;
 
 public class HomePage extends base{
-	
+	public WebDriver driver;
+	public static Logger Log=LogManager.getLogger(base.class.getName());
 @Test(dataProvider = "getData")
 public void basePageNavigation(String Username, String Passsowrd, String text) throws IOException{
 	driver=initalizeDriver();
@@ -26,7 +30,8 @@ public void basePageNavigation(String Username, String Passsowrd, String text) t
 	lPage.getEmail().sendKeys(Username);
 	lPage.getPassword().sendKeys(Passsowrd);
 	lPage.getlogin().click();
-	System.out.println(text);
+	//System.out.println(text);
+	Log.info(text);
 }
 @DataProvider
 public Object[][] getData() {
