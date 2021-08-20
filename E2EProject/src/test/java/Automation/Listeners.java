@@ -17,23 +17,25 @@ import resources.base;
 public class Listeners extends base implements ITestListener {
 	ExtentTest  test;
 	ExtentReports extent=ExtentReporterNG.getReportObject();
+	ThreadLocal<ExtentTest> extentTest=new ThreadLocal<ExtentTest>();
 	@Override
 	public void onTestStart(ITestResult result) {
 		// TODO Auto-generated method stub
 		test=extent.createTest("Initial Demo");
+		extentTest.set(test);
 	}
 
 	@Override
 	public void onTestSuccess(ITestResult result) {
 		// TODO Auto-generated method stub
-		test.log(Status.PASS, "Test Passed");
+		extentTest.get().log(Status.PASS, "Test Passed");
 	}
 
 	@Override
 	public void onTestFailure(ITestResult result) {
 		// TODO Auto-generated method stub
 		//extentTest.get().fail(result.getThrowable());
-		test.fail(result.getThrowable());
+		extentTest.get().fail(result.getThrowable());
 		WebDriver driver =null;
 		String testMethodName =result.getMethod().getMethodName();
 		
