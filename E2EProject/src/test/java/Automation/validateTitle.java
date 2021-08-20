@@ -30,7 +30,7 @@ public void basePageNavigation() throws IOException{
 	driver.get(properties.getProperty("url"));
 	
 	LandingPage l=new LandingPage(driver);
-	org.testng.Assert.assertEquals(l.getTitle().getText(), "FEATURED COURSES");
+	org.testng.Assert.assertEquals(l.getTitle().getText(), "FEATURED COURSESS");
 	Log.info("Sussessfully validated Text Message");
 }
 @AfterTest
